@@ -1,4 +1,4 @@
-package com.projeto.projeto.domain;
+package com.jaoangeloni.newspaper.domain;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -7,10 +7,10 @@ import java.util.Objects;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.projeto.projeto.dto.AuthorDTO;
+import com.jaoangeloni.newspaper.dto.AuthorDTO;
 
 @Document
-public class Post implements Serializable{
+public class News implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -18,11 +18,21 @@ public class Post implements Serializable{
 	private Date date;
 	private String title;
 	private String body;
+	private String image;
 	private AuthorDTO author;
 	
-	public Post() {}
+	public News() {}
 	
-	public Post(String id, Date date, String title, String body, AuthorDTO author) {
+	public News(String id, Date date, String title, String body, AuthorDTO author, String image) {
+		this.id = id;
+		this.date = date;
+		this.title = title;
+		this.image = image;
+		this.body = body;
+		this.setAuthor(author);
+	}
+
+	public News(String id, Date date, String title, String body, AuthorDTO author) {
 		this.id = id;
 		this.date = date;
 		this.title = title;
@@ -48,6 +58,15 @@ public class Post implements Serializable{
 
 	public String getTitle() {
 		return title;
+	}
+
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public String getImage() {
+		return image;
 	}
 
 	public void setTitle(String title) {
@@ -83,7 +102,7 @@ public class Post implements Serializable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Post other = (Post) obj;
+		News other = (News) obj;
 		return Objects.equals(id, other.id);
 	}
 }

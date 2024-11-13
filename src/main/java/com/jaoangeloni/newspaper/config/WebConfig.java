@@ -1,4 +1,4 @@
-package com.projeto.projeto.config;
+package com.jaoangeloni.newspaper.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

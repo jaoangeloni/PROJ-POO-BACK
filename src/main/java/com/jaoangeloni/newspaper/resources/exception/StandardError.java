@@ -1,4 +1,4 @@
-package com.projeto.projeto.resources.exception;
+package com.jaoangeloni.newspaper.resources.exception;
 
 import java.io.Serializable;
 

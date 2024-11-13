@@ -1,8 +1,8 @@
-package com.projeto.projeto.dto;
+package com.jaoangeloni.newspaper.dto;
 
 import java.io.Serializable;
 
-import com.projeto.projeto.domain.User;
+import com.jaoangeloni.newspaper.domain.User;
 
 public class UserDTO implements Serializable {
 	private static final long serialVersionUID = 1L;

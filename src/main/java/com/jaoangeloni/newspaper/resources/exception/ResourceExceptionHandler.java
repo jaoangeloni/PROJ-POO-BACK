@@ -1,11 +1,11 @@
-package com.projeto.projeto.resources.exception;
+package com.jaoangeloni.newspaper.resources.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.projeto.projeto.services.exception.ObjectNotFoundException;
+import com.jaoangeloni.newspaper.services.exception.ObjectNotFoundException;
 
 import jakarta.servlet.http.HttpServletRequest;
 

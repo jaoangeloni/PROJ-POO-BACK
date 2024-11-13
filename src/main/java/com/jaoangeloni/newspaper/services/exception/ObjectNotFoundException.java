@@ -1,4 +1,4 @@
-package com.projeto.projeto.services.exception;
+package com.jaoangeloni.newspaper.services.exception;
 
 public class ObjectNotFoundException extends RuntimeException{
 

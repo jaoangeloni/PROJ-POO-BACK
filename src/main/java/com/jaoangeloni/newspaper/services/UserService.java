@@ -1,4 +1,4 @@
-package com.projeto.projeto.services;
+package com.jaoangeloni.newspaper.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,12 +6,10 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.projeto.projeto.domain.Post;
-import com.projeto.projeto.domain.User;
-import com.projeto.projeto.dto.UserDTO;
-import com.projeto.projeto.repository.PostRepository;
-import com.projeto.projeto.repository.UserRepository;
-import com.projeto.projeto.services.exception.ObjectNotFoundException;
+import com.jaoangeloni.newspaper.domain.User;
+import com.jaoangeloni.newspaper.dto.UserDTO;
+import com.jaoangeloni.newspaper.repository.UserRepository;
+import com.jaoangeloni.newspaper.services.exception.ObjectNotFoundException;
 
 @Service
 public class UserService {
@@ -41,7 +39,7 @@ public class UserService {
 		User newObj = findById(obj.getId());
 		updateData(newObj, obj);
 		return repo.save(newObj);
-		}
+	}
 	
 	
 	private void updateData(User newObj, User obj) {

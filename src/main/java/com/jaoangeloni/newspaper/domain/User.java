@@ -1,4 +1,4 @@
-package com.projeto.projeto.domain;
+package com.jaoangeloni.newspaper.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -17,11 +17,20 @@ public class User implements Serializable{
 	private String id;
 	private String name;
 	private String email;
-	
+	private String senha;
+
 	@DBRef(lazy = true)
-	private List<Post> posts = new ArrayList<>();
+	private List<News> news = new ArrayList<>();
 	
 	public User() {}
+
+	public User(String id, String name, String email, String senha) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.senha = senha;
+		this.email = email;
+	}
 
 	public User(String id, String name, String email) {
 		super();
@@ -36,6 +45,14 @@ public class User implements Serializable{
 
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 
 	public String getName() {
@@ -59,12 +76,12 @@ public class User implements Serializable{
 		return Objects.hash(id);
 	}
 
-	public List<Post> getPosts() {
-		return posts;
+	public List<News> getPosts() {
+		return news;
 	}
 
-	public void setPosts(List<Post> posts) {
-		this.posts = posts;
+	public void setPosts(List<News> news) {
+		this.news = news;
 	}
 	
 	@Override
