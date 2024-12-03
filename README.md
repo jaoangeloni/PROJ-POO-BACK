@@ -1,3 +1,18 @@
+# News TEC
+
+>  Um portal de notícias para conectar estudantes e funcionários da FATEC através de informações e atualizações .  
+
+## 📦 Instalação
+
+Siga os passos abaixo para configurar o ambiente do projeto.
+
+### Pré-requisitos
+
+- Node.js (>= 14.x)
+- npm (>= 6.x) ou yarn (opcional)
+
+
+
 # Portal de Notícias da FATEC  
 
 > Um portal de notícias para conectar estudantes e funcionários da FATEC através de informações e atualizações .  
