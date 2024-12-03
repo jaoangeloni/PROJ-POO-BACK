@@ -9,6 +9,7 @@ Siga os passos abaixo para configurar o ambiente do projeto.
 ### Pré-requisitos
 
 - JDK 21
+- Node
 
 # Portal de Notícias da FATEC  
 
