@@ -10,6 +10,7 @@ Siga os passos abaixo para configurar o ambiente do projeto.
 
 - JDK 21
 - Node
+- Conta cloudinary
 
 # Portal de Notícias da FATEC  
 
