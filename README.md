@@ -1,4 +1,4 @@
-# News TEC
+# NewsTec
 
 >  Um portal de notícias para conectar estudantes e funcionários da FATEC através de informações e atualizações .  
 
@@ -8,10 +8,7 @@ Siga os passos abaixo para configurar o ambiente do projeto.
 
 ### Pré-requisitos
 
-- Node.js (>= 14.x)
-- npm (>= 6.x) ou yarn (opcional)
-
-
+- JDK 21
 
 # Portal de Notícias da FATEC  
 
@@ -33,30 +30,14 @@ Este projeto foi desenvolvido usando **Programação Orientada a Objetos (POO)**
 1. **Adicionar notícias**  
    - Insira o título, o conteúdo e uma data de publicação.  
 
-2. **Editar notícias**  
-   - Atualizar informações incorretas ou desatualizadas.  
-
-3. **Excluir notícias**  
+2. **Excluir notícias**  
    - Remover conteúdos irrelevantes ou ultrapassados.  
 
-4. **Visualizar e navegar**  
+3. **Visualizar e navegar**  
    - Listagem clara de todas as notícias, com a possibilidade de filtrar ou buscar por palavra-chave.  
 
-5. **Interface amigável**  
+4. **Interface amigável**  
    - Simples de usar e adaptada para qualquer dispositivo (computador, celular ou tablet).  
-
----
-
-## 📷 Capturas de Tela  
-
-### Página Inicial  
-
-
-### Cadastro de Notícia  
-
-
-### Edição de Notícia  
- 
 
 ---
 
@@ -64,17 +45,13 @@ Este projeto foi desenvolvido usando **Programação Orientada a Objetos (POO)**
 
 ### ✅ Requisitos Funcionais  
 - O sistema deve permitir o **cadastro de notícias** com título, descrição e data de publicação.  
-- O sistema deve permitir que notícias sejam **editadas**, atualizando as informações no banco de dados.  
 - Deve ser possível **remover notícias** que não são mais relevantes ou que foram inseridas incorretamente.  
 - As notícias devem ser exibidas em uma listagem clara, ordenadas por data, com a possibilidade de buscar ou filtrar por palavras-chave.  
-- Deve haver controle de acesso básico para garantir que apenas usuários autorizados possam criar, editar ou excluir notícias.  
+- Deve haver controle de acesso básico para garantir que apenas usuários logados possam criar ou excluir notícias.  
 
 ### ⚙️ Requisitos Não Funcionais  
 - **Performance**:  
   - O sistema deve ser rápido, mesmo com um grande número de notícias cadastradas.  
-- **Segurança**:  
-  - O sistema deve validar todas as entradas para evitar problemas como injeção de SQL ou dados inválidos.  
-  - Deve haver controle de autenticação básica para ações de administração.  
 - **Compatibilidade**:  
   - A aplicação deve ser acessível em diferentes navegadores (Chrome, Firefox, Edge) e dispositivos (PCs, tablets e smartphones).  
 - **Manutenibilidade**:  
@@ -82,15 +59,7 @@ Este projeto foi desenvolvido usando **Programação Orientada a Objetos (POO)**
 - **Escalabilidade**:  
   - A arquitetura deve ser flexível para implementar funcionalidades futuras, como comentários ou notificações.  
 
-## 📚 Aprendizado
-  
 
 ### 🖥️ Programação 
 - **POO na prática**: Conseguimos ver como conceitos como herança, encapsulamento e polimorfismo fazem sentido num projeto real.  
 - **Estrutura do código**: Descobrimos o valor de manter o código organizado e reutilizável, facilitando futuras manutenções.  
-
-### 📊 Organização  
-
-
-### 🔍Problemas  
-- 
